@@ -166,5 +166,17 @@
       </div>
     </div>
   </footer>
+<script>
+function myFunction() {
+zh=((document.location.href.match(/index.+/)||[])[0].match(/[0-9]+/)||[])[0]
+
+ jk=(document.location.href.match(/.+index/)||[])[0]
+console.log(jk)
+zh=zh-1
+  location.replace(jk+zh+".html")
+}
+</script>
+
+
 </body>
 </html>
