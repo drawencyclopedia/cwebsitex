@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+
+
+while inotifywait -e modify /home/diegonode/GitHub/cwebsitex; do
+git config --global user.name "drawencyclopedia"
+
+git config --global user.password "megadra34434gith5354"
+
+git init
+git add /home/diegonode/GitHub/cwebsitex
+git commit -m "Your message about the commit"
+git remote add origin https://github.com/drawencyclopedia/cwebsitex.git
+git push -u origin master
+git push origin master
+done
