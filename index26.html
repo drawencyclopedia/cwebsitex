@@ -172,7 +172,7 @@
 
 <script>
 function myFunction() {
-zh=document.location.href.match(/index.+/)||[])[0]
+zh=document.location.href.match(/index.+/)||[])[0].match(/[0-9]+/)||[])[0]
 
  if ((msg.content.match(/concatxxyy ...+/)||[]).length >0) {
 
